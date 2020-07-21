@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "facemeth extention",
+	"description": "chrome-extentions sample using facemesh",
+	"version": "0.1",
+
+	"icons": {
+		"16": "images/icon16.png",
+		"128": "images/icon128.png"
+	},
+
+	"permissions": [
+    "https://meet.google.com/"
+  ],
+  "content_scripts": [
+    {
+			"js": ["js/loader.js"],
+      "matches" : ["https://meet.google.com/*"],
+      "run_at": "document_start"
+    }
+  ],
+	"web_accessible_resources": [
+		"js/cs.js",
+		"js/baseImg.js"
+  ]
+}
