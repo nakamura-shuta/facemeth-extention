@@ -14,7 +14,7 @@
   ],
   "content_scripts": [
     {
-			"js": ["js/loader.js"],
+      "js": ["js/loader.js"],
       "matches" : ["https://meet.google.com/*"],
       "run_at": "document_start"
     }
